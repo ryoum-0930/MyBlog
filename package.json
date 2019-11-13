@@ -10,6 +10,6 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "vuepress-theme-meteorlxy": "^1.6.0"
+    "vuepress-theme-meteorlxy": "^1.7.1"
   }
 }
