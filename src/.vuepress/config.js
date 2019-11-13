@@ -2,11 +2,14 @@
 
 module.exports = {
   // Title of your website
-  title: 'Ryoma',
+  title: '塵を積んで山にする',
 
   // Description of your website
   description: 'This is my blog',
 
+  themeConfig: {
+    lang: require('./public/lang/js-JP')
+  },
   // Language of your website
   locales: {
     '/': {
@@ -25,10 +28,10 @@ module.exports = {
     // Personal infomation (delete the fields if you don't have / don't want to display)
     personalInfo: {
       // Nickname
-      nickname: 'Ryoma',
+      nickname: 'Ryouma',
 
       // Introduction of yourself
-      description: 'サボりがわかる<br/>日々のメモ',
+      description: 'Ryouma\'s tech blog and memo',
 
       // Email
       email: 'grnd.ryouma@gmail.com',
@@ -49,33 +52,41 @@ module.exports = {
       sns: {
         // Github account and link
         github: {
-          account: 'meteorlxy',
-          link: 'https://github.com/meteorlxy',
+          account: 'ryouma',
+          link: 'https://github.com/ryoum-0930',
         },
 
         // Facebook account and link
         facebook: {
-          account: 'meteorlxy.cn',
-          link: 'https://www.facebook.com/meteorlxy.cn',
+          account: '龍真',
+          link: 'https://www.facebook.com/profile.php?id=100005973346702',
         },
 
         // LinkedIn account and link
-        linkedin: {
-          account: 'meteorlxy',
-          link: 'http://www.linkedin.com/in/meteorlxy',
-        },
 
         // Twitter account and link
         twitter: {
           account: 'meteorlxy_cn',
-          link: 'https://twitter.com/meteorlxy_cn',
+          link: 'https://twitter.com/Rym_gdm',
         },
 
+        // Sina Weibo account and link
+
+        // Zhihu account and link
+
+        // Douban account and link
+
+        // Reddit account and link
+
+        // Medium account and link
+
+        // Instagram account and link
+
         // GitLab account and link
-        gitlab: {
-          account: 'meteorlxy',
-          link: 'https://gitlab.com/meteorlxy',
-        },
+
+        // Bitbucket account and link
+
+        // Docker Hub account and link
       },
     },
 
@@ -84,7 +95,7 @@ module.exports = {
       // The background of the header. You can choose to use an image, or to use random pattern (geopattern)
       background: {
         // URL of the background image. If you set the URL, the random pattern will not be generated, and the `useGeo` will be ignored.
-        url: '/assets/img/bg.jpg',
+        // url: '/assets/img/bg.jpg',
 
         // Use random pattern. If you set it to `false`, and you don't set the image URL, the background will be blank.
         useGeo: true,
@@ -101,12 +112,14 @@ module.exports = {
     nav: [
       { text: 'Home', link: '/', exact: true },
       { text: 'Posts', link: '/posts/', exact: false },
-      { text: 'about', link: '/about', exact: false},
+      { text: 'Categories', link: '../category', exact: false},
+      { text: 'Tags', link: '../tag/', exact: false},
+      { text: 'About', link: '../about/', exact: false},
     ],
 
     // Comments config. See the [Posts Comments] section below.
     comments: {
-      owner: 'meteorlxy',
+      owner: 'ryouma',
       repo: 'vuepress-theme-meteorlxy',
       clientId: 'MY_CLIENT_ID',
       clientSecret: 'MY_CLIENT_SECRET',
