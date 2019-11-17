@@ -5,15 +5,12 @@ module.exports = {
   title: '塵を積んで山にする',
 
   // Description of your website
-  description: 'This is my blog',
+  description: 'This is ryouma\'s blog',
 
-  themeConfig: {
-    lang: require('./public/lang/js-JP')
-  },
   // Language of your website
   locales: {
     '/': {
-      lang: 'en-US',
+      lang: 'ja',
     },
   },
 
