@@ -25,10 +25,10 @@ module.exports = {
     // Personal infomation (delete the fields if you don't have / don't want to display)
     personalInfo: {
       // Nickname
-      nickname: 'Ryouma',
+      nickname: 'Ryoma',
 
       // Introduction of yourself
-      description: 'Ryouma\'s tech blog and memo',
+      description: 'Ryoma\'s tech blog and memo',
 
       // Email
       email: 'grnd.ryouma@gmail.com',
@@ -63,7 +63,7 @@ module.exports = {
 
         // Twitter account and link
         twitter: {
-          account: 'meteorlxy_cn',
+          account: 'Rym_gdm',
           link: 'https://twitter.com/Rym_gdm',
         },
 
@@ -109,9 +109,9 @@ module.exports = {
     nav: [
       { text: 'Home', link: '/', exact: true },
       { text: 'Posts', link: '/posts/', exact: false },
-      { text: 'Categories', link: '../category', exact: false},
-      { text: 'Tags', link: '../tag/', exact: false},
-      { text: 'About', link: '../about/', exact: false},
+      { text: 'Categories', link: '/category', exact: false},
+      { text: 'Tags', link: '/tag/', exact: false},
+      { text: 'About', link: '/about/', exact: false},
     ],
 
     // Comments config. See the [Posts Comments] section below.
