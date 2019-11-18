@@ -1,9 +1,9 @@
 ---
 title: ''
 date: 2019-11-18
-category: 日常
+category: daily
 tags:
-  - 日常
+  - daily
 ---
 # はじめまして
-* aaaaaaaaaaaaaa
+* 
