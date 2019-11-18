@@ -41,9 +41,9 @@ module.exports = {
 
       // Your avatar image
       // Set to external link
-      avatar: 'https://www.meteorlxy.cn/assets/img/avatar.jpg',
+      // avatar: 'https://www.meteorlxy.cn/assets/img/avatar.jpg',
       // Or put into `.vuepress/public` directory. E.g. `.vuepress/public/img/avatar.jpg`
-      // avatar: '/img/avatar.jpg',
+      avatar: '/img/avatar.jpg',
 
       // Accounts of SNS
       sns: {
