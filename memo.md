@@ -1,0 +1,172 @@
+## win + shift + S
+> 指定した画像領域がクリップボードに保存される
+
+```
+"terminal.integrated.shell.windows": "C:\\Users\\Default\\AppData\\Local\\Git\\bin\\bash.exe",
+```
+vscode-統合ターミナル-
+https://code.visualstudio.com/docs/editor/integrated-terminal#_configuration
+
+
+'''ファイル構成
+naritech.dev
+├── package-lock.json
+├── package.json
+└── src
+    ├── .vuepress       // VuePress関連の設定やコンポーネントを格納する
+    │   ├── components  // .vueを配置
+    │   ├── config.js
+    │   └── public      // 画像ファイルを配置
+    │ 
+    ├── about           
+    │   └── index.md    // Aboutページ内容
+    │ 
+    ├── blog            // 記事を書く（カテゴリ分け）
+    │   ├── column
+    │   │   └── xxx  
+    │   └── tech
+    │   │   └── xxx 
+    │   └── index.md
+    └── index.md        // Topページ
+'''
+
+```config.js
+// .vuepress/config.js
+
+module.exports = {
+  // Title of your website
+  title: '塵を積んで山にする',
+
+  // Description of your website
+  description: 'This is ryouma\'s blog',
+
+  // Language of your website
+  locales: {
+    '/': {
+      lang: 'ja',
+    },
+  },
+
+  // Theme to use
+  theme: 'meteorlxy',
+
+  // Theme config
+  themeConfig: {
+    // Language of this theme. See the [Theme Language] section below.
+    lang: 'en-US',
+
+    // Personal infomation (delete the fields if you don't have / don't want to display)
+    personalInfo: {
+      // Nickname
+      nickname: 'Ryouma',
+
+      // Introduction of yourself
+      description: 'Ryouma\'s tech blog and memo',
+
+      // Email
+      email: 'grnd.ryouma@gmail.com',
+
+      // Your location
+      location: 'Yamaguchi',
+
+      // Your organization
+      organization: 'National Institute of Technology, Oshima College',
+
+      // Your avatar image
+      // Set to external link
+      avatar: 'https://www.meteorlxy.cn/assets/img/avatar.jpg',
+      // Or put into `.vuepress/public` directory. E.g. `.vuepress/public/img/avatar.jpg`
+      // avatar: '/img/avatar.jpg',
+
+      // Accounts of SNS
+      sns: {
+        // Github account and link
+        github: {
+          account: 'ryouma',
+          link: 'https://github.com/ryoum-0930',
+        },
+
+        // Facebook account and link
+        facebook: {
+          account: '龍真',
+          link: 'https://www.facebook.com/profile.php?id=100005973346702',
+        },
+
+        // LinkedIn account and link
+
+        // Twitter account and link
+        twitter: {
+          account: 'meteorlxy_cn',
+          link: 'https://twitter.com/Rym_gdm',
+        },
+
+        // Sina Weibo account and link
+
+        // Zhihu account and link
+
+        // Douban account and link
+
+        // Reddit account and link
+
+        // Medium account and link
+
+        // Instagram account and link
+
+        // GitLab account and link
+
+        // Bitbucket account and link
+
+        // Docker Hub account and link
+      },
+    },
+
+    // Header Config
+    header: {
+      // The background of the header. You can choose to use an image, or to use random pattern (geopattern)
+      background: {
+        // URL of the background image. If you set the URL, the random pattern will not be generated, and the `useGeo` will be ignored.
+        // url: '/assets/img/bg.jpg',
+
+        // Use random pattern. If you set it to `false`, and you don't set the image URL, the background will be blank.
+        useGeo: true,
+      },
+
+      // show title in the header or not
+      showTitle: true,
+    },
+
+    // Show the last updated time of your posts
+    lastUpdated: true,
+
+    // The content of your navbar links
+    nav: [
+      { text: 'Home', link: '/', exact: true },
+      { text: 'Posts', link: '/posts/', exact: false },
+      { text: 'Categories', link: '../category', exact: false},
+      { text: 'Tags', link: '../tag/', exact: false},
+      { text: 'About', link: '../about/', exact: false},
+    ],
+
+    // Comments config. See the [Posts Comments] section below.
+    comments: {
+      owner: 'meteprlxy',
+      repo: 'vuepress-theme-meteorlxy',
+      clientId: 'MY_CLIENT_ID',
+      clientSecret: 'MY_CLIENT_SECRET',
+    },
+
+    // Pagination config
+    pagination: {
+      perPage: 5,
+    },
+
+    // Default Pages (Optional, the default value of all pages is `true`)
+    defaultPages: {
+      // Allow theme to add Home page (url: /)
+      home: true,
+      // Allow theme to add Posts page (url: /posts/)
+      posts: true,
+    },
+  },
+}
+```
