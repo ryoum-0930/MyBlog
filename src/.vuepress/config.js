@@ -2,7 +2,7 @@
 
 module.exports = {
   // Title of your website
-  title: '塵を積んで山にする',
+  title: '愚者の歩み',
 
   // Description of your website
   description: 'This is ryouma\'s blog',
