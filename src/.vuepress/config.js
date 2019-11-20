@@ -108,10 +108,7 @@ module.exports = {
     // The content of your navbar links
     nav: [
       { text: 'Home', link: '/', exact: true },
-      { text: 'Posts', link: '/posts/', exact: false },
-      { text: 'Categories', link: '/category', exact: false},
-      { text: 'Tags', link: '/tag/', exact: false},
-      { text: 'About', link: '/about/', exact: false},
+      { text: 'Posts', link: '/_posts/', exact: false },
     ],
 
     // Comments config. See the [Posts Comments] section below.
