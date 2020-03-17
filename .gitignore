@@ -1,2 +1,4 @@
 node_modules
 memo.md
+_memo
+_memo/**.md
